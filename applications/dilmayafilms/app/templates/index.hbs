@@ -1,0 +1,18 @@
+{{page-title "Home"}}
+
+<main>
+	<h1 class="my-5 text-uppercase text-center">
+		Dilmaya Films
+	</h1>
+
+	<h1 class="my-5 text-uppercase text-center">
+		{{@model.schema.headmeta_title}}
+	</h1>
+</main>
+
+<!--
+This transparent pixel can initiate javascript onload function
+<img src="/assets/img/pixel-onload.png" alt="pixel-loader" {{on "load" this.loadSomething}} class="d-none">
+-->
+
+{{outlet}}

@@ -23,10 +23,7 @@ if (!defined('VAR_NAME')) {
 // set cors headers in PHP server
 if ($_ENV['ALLOW_CROSS_ORIGIN'] === 'true') {
 
-	//in dev environment, allowing cross origin * for localhost
-	if ($_ENV['ENV'] == 'dev') {
-		header("Access-Control-Allow-Origin: *");
-	}
+	header("Access-Control-Allow-Origin: *");
 
 	//in prod environment, if cross origin access is required, uncomment the following and modify cross_origin_url
 	/*
