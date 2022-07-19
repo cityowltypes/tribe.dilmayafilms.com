@@ -1,0 +1,21 @@
+.animated-gradient {
+  animation: animateBg 15s linear infinite;
+  background-image: linear-gradient(0deg,#000000,#3d3846,#000000,#000000,#3d3846);
+  background-size: 100% 400%;
+}
+@keyframes animateBg {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 0% 100%; }
+}
+
+section {
+  min-height: 100vh;
+}
+
+#logo {
+  opacity: 0;
+}
+
+html, body {
+  background: #000;
+}

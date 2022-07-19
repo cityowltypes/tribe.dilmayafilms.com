@@ -71,5 +71,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "gsap": "^3.10.4"
   }
 }

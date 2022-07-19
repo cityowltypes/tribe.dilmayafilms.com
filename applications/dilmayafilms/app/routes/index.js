@@ -5,7 +5,7 @@ export default class IndexRoute extends Route {
   @service store;
 
   async model() {
-  	//findRecord for type+slug pair and findAll all objects in a type
+    //findRecord for type+slug pair and findAll all objects in a type
     return await this.store.findRecord('types_json', 'webapp');
 
     //this.store.findAll('film');
