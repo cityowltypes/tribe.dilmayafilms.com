@@ -22,6 +22,11 @@ module.exports = function (defaults) {
 
   app.import('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js');
   app.import('public/assets/fontawesome/css/all.css');
+  app.import('node_modules/video.js/dist/video.js');
+  app.import(
+    'node_modules/@videojs/http-streaming/dist/videojs-http-streaming.js'
+  );
+  app.import('node_modules/video.js/dist/video-js.css');
   app.import('public/assets/css/custom.css');
   app.import('public/assets/js/custom.js');
 

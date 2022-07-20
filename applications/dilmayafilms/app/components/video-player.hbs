@@ -1,0 +1,5 @@
+<video-js poster={{@poster}} class="vjs-theme-city video-player ratio ratio-16x9" id={{@id}} playsinline crossorigin>
+	<img src="/assets/img/pixel-onload.png" alt="pixel-loader" {{on "load" this.loadM3U8}} class="d-none">
+	<source src={{@streamingURL}} type="application/x-mpegURL" />
+	{{yield}}
+</video-js>
